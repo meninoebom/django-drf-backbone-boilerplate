@@ -1,4 +1,4 @@
-"""drf_boilerplate URL Configuration
+"""main_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.8/topics/http/urls/
@@ -19,6 +19,6 @@ from client import urls as jsf_urls
 
 urlpatterns = [
     url(r'^', include(jsf_urls)),
-    url(r'^api/', include(server.api.urls))
+    url(r'^api/', include('server.api.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
