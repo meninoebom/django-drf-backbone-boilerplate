@@ -8,7 +8,16 @@
     </head>
     <body>
 
-        <script src="{% static 'client/js/bower_components/underscore/underscore-min.js' %}"></script>
+        <section id='UserInput'>
+            <fieldset>
+                <legend>Enter a name and click say hello!</legend>
+                <input type="text" name="hello" placeholder="your friend name" value="Your Name" /> &#160; <button>Say hello</button>
+            </fieldset>
+        </section>
+        <ol id="HelloList"/>
+
+        <script src="{% static 'client/js/bower_components/jquery/dist/jquery.js' %}"></script>
+        <script src="{% static 'client/js/bower_components/underscore/underscore.js' %}"></script>
         <script src="{% static 'client/js/bower_components/backbone/backbone.js' %}"></script>
         <script src="{% static 'client/js/index.js' %}"></script>
 
